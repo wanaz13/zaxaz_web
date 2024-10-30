@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phoneNumber": "+60123456789",
+    "productType": "T-shirt",
+    "quantity": 3,
+    "designFile": "design1.png",
+    "submissionDate": "2024-09-10T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "phoneNumber": "+60198765432",
+    "productType": "Mug",
+    "quantity": 2,
+    "designFile": "design2.jpg",
+    "submissionDate": "2024-09-10T12:30:00Z"
+  },
+  {
+    "name": "wan test 14",
+    "email": "pecayif706@coloruz.com",
+    "phoneNumber": "+10139050470",
+    "productType": "mug",
+    "quantity": "123"
+  },
+  {
+    "name": "wan test 14",
+    "email": "pecayif706@coloruz.com",
+    "phoneNumber": "+10139050470",
+    "productType": "mug",
+    "quantity": "1234"
+  }
+]

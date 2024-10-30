@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer xguna {
+  :root {
+    --background: 120 39% 90%; /* Light green background */
+    --foreground: 270 40% 15%; /* Dark purple foreground */
+ 
+    --muted: 120 39% 85%; /* Light green muted */
+    --muted-foreground: 270 40% 25%; /* Dark purple muted foreground */
+ 
+    --popover: 120 39% 90%; /* Light green popover */
+    --popover-foreground: 270 40% 15%; /* Dark purple popover foreground */
+ 
+    --card: 120 39% 90%; /* Light green card */
+    --card-foreground: 270 40% 15%; /* Dark purple card foreground */
+ 
+    --border: 120 39% 80%; /* Light green border */
+    --input: 120 39% 80%; /* Light green input */
+ 
+    --primary: 120 39% 50%; /* Medium green primary */
+    --primary-foreground: 270 40% 98%; /* Very light purple primary foreground */
+ 
+    --secondary: 270 40% 90%; /* Light purple secondary */
+    --secondary-foreground: 120 39% 30%; /* Dark green secondary foreground */
+ 
+    --accent: 120 39% 85%; /* Light green accent */
+    --accent-foreground: 270 40% 25%; /* Dark purple accent foreground */
+ 
+    --destructive: 0 84.2% 60.2%; /* Red destructive */
+    --destructive-foreground: 210 40% 98%; /* Very light destructive foreground */
+ 
+    --ring: 120 39% 50%; /* Medium green ring */
+ 
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 297 40% 15%; /* Dark purple background */
+    --foreground: 120 39% 90%; /* Light green foreground */
+ 
+    --muted: 270 40% 25%; /* Dark purple muted */
+    --muted-foreground: 120 39% 85%; /* Light green muted foreground */
+ 
+    --popover: 270 40% 15%; /* Dark purple popover */
+    --popover-foreground: 120 39% 90%; /* Light green popover foreground */
+ 
+    --card: 270 40% 15%; /* Dark purple card */
+    --card-foreground: 120 39% 90%; /* Light green card foreground */
+ 
+    --border: 270 40% 25%; /* Dark purple border */
+    --input: 270 40% 25%; /* Dark purple input */
+ 
+    --primary: 270 40% 50%; /* Medium purple primary */
+    --primary-foreground: 120 39% 98%; /* Very light green primary foreground */
+ 
+    --secondary: 120 39% 30%; /* Dark green secondary */
+    --secondary-foreground: 270 40% 90%; /* Light purple secondary foreground */
+ 
+    --accent: 270 40% 25%; /* Dark purple accent */
+    --accent-foreground: 120 39% 85%; /* Light green accent foreground */
+ 
+    --destructive: 0 62.8% 30.6%; /* Dark red destructive */
+    --destructive-foreground: 120 39% 90%; /* Light green destructive foreground */
+ 
+    --ring: 270 40% 50%; /* Medium purple ring */
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+  
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+  
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+  
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+  
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+  
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+  
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+  
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+  
+    --border:220 13% 91%;
+    --input:220 13% 91%;
+    --ring:224 71.4% 4.1%;
+    --radius: 0.75rem;
+  }
+   
+  .dark {
+    --background:220, 39%, 10%;
+    --foreground:210 20% 98%;
+  
+    --card:224 71.4% 4.1%;
+    --card-foreground:210 20% 98%;
+  
+    --popover:224 71.4% 4.1%;
+    --popover-foreground:210 20% 98%;
+  
+    --primary:210 20% 98%;
+    --primary-foreground:220.9 39.3% 11%;
+  
+    --secondary:215 27.9% 16.9%;
+    --secondary-foreground:210 20% 98%;
+  
+    --muted:215 27.9% 16.9%;
+    --muted-foreground:217.9 10.6% 64.9%;
+  
+    --accent:215 27.9% 16.9%;
+    --accent-foreground:210 20% 98%;
+  
+    --destructive:0 62.8% 30.6%;
+    --destructive-foreground:210 20% 98%;
+  
+    --border:215 27.9% 16.9%;
+    --input:215 27.9% 16.9%;
+    --ring:216 12.2% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
