@@ -102,7 +102,7 @@ async function submitOrder() {
             showToast('error', 'Something went wrong while submitting the order');
         }
     } catch (error) {
-        showToast('error', error.response?.data?.message || 'Error submitting order');
+        showToast('error', (error as any).response?.data?.message || 'Error submitting order');
     }
 }
 
